@@ -15,6 +15,7 @@
   --global-color-grey: grey;
   --global-color-grey-light: rgb(182, 182, 182);
   --global-color-white: white;
+  --scroll-bar-width: 17px;
 }
 
 img {
@@ -47,6 +48,10 @@ p {
 a {
   text-decoration: none;
   color: black;
+}
+
+body {
+  width: calc(100vw - var(--scroll-bar-width));
 }
 
 html,
@@ -194,12 +199,19 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   overflow: hidden;
+}
+
+.scroll-disabled {
+  height: calc(100vh - 56px);
 }
 
 .navbar {
   position: fixed;
-  width: 100%;
+  width: calc(100vw - var(--scroll-bar-width));
   height: 0;
   top: 0;
   z-index: 3;
@@ -215,7 +227,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
   height: 5rem;
   padding: 0 5rem;
   background-color: transparent;
@@ -379,7 +390,9 @@ body {
 .overlay-menu-wrapper {
   position: fixed;
   top: 0;
-  width: 100%;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  width: calc(100vw - var(--scroll-bar-width));
   height: 0;
   z-index: 2;
 }
@@ -1576,6 +1589,9 @@ body {
 }
 
 @media only screen and (max-width: 1024px) {
+  :root {
+    --scroll-bar-width: 0px;
+  }
   .background-section {
     height: 100vh;
   }

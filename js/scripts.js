@@ -21,8 +21,12 @@ $(window).scroll(function () {
 //Burger menu control start
 const burger = document.querySelector(".burger-menu");
 var timesClicked = 0;
+var scrollTop1 = 0;
+var scrollTop2 = 0;
 
 $(".burger-menu").click(function () {
+  var scrollTop1 = $(window).scrollTop();
+
   if (timesClicked % 2 != 0) {
     burger.classList.toggle("burger-menu-animation");
     burger.classList.toggle("burger-active");
@@ -36,6 +40,10 @@ $(".burger-menu").click(function () {
       }
       $(".navbar").removeClass("background-transparent");
     }, 1000);
+
+    $(".website-wrapper").removeClass("scroll-disabled");
+    document.getElementById("empty-section").style.marginTop = "0px";
+    window.scrollTo(0, scrollTop2);
   } else {
     $(".overlay-menu").removeClass("overlay-menu-invisible");
     $(".overlay-menu").addClass("keyframes-forward");
@@ -48,11 +56,18 @@ $(".burger-menu").click(function () {
     $(".navbar").addClass("navbar-scrolled");
     $(".navbar").addClass("background-transparent");
     $(".overlay-menu-footer").addClass("visible");
+
+    window.setTimeout(function () {
+      document.getElementById("empty-section").style.marginTop =
+        -scrollTop1 + "px";
+      $(".website-wrapper").addClass("scroll-disabled");
+    }, 1000);
   }
   timesClicked++;
   if (timesClicked > 1) {
     timesClicked = 0;
   }
+  scrollTop2 = scrollTop1;
 });
 //Burger menu control end
 
