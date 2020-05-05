@@ -1,3 +1,11 @@
+if (window.innerWidth <= 1024) {
+  $(".overlay-menu").height(window.innerHeight);
+}
+
+window.addEventListener("resize", () => {
+  $(".overlay-menu").height(window.innerHeight);
+});
+
 //When page loaded scroll position = 0
 $(document).ready(function () {
   setTimeout(function () {
