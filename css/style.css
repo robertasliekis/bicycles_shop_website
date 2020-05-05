@@ -1693,7 +1693,7 @@ body {
   .overlay-menu .overlay-menu-lists .list2 .menu-item {
     font-size: 1.8rem;
     padding: 0;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.3rem;
   }
   .overlay-menu .overlay-menu-footer {
     width: 100%;
@@ -2061,7 +2061,7 @@ body {
 
 @media only screen and (max-width: 320px) {
   .overlay-menu .overlay-menu-lists .list1 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   .overlay-menu .overlay-menu-lists .list1 .menu-item {
     font-size: 1.3rem;
