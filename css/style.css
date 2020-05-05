@@ -1682,7 +1682,7 @@ body {
     padding-left: 2rem;
   }
   .overlay-menu .overlay-menu-lists .list1 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   .overlay-menu .overlay-menu-lists .list1 .menu-item {
     font-size: 1.8rem;
@@ -2033,11 +2033,11 @@ body {
     margin-bottom: 1rem;
   }
   .overlay-menu .overlay-menu-lists .list1 .menu-item {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .overlay-menu .overlay-menu-lists .list2 .menu-item {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+    margin-bottom: 0.2rem;
   }
   .website-logo .website-logo-icon {
     display: none;
@@ -2064,10 +2064,10 @@ body {
     margin-bottom: 1rem;
   }
   .overlay-menu .overlay-menu-lists .list1 .menu-item {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .overlay-menu .overlay-menu-lists .list2 .menu-item {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 0.2rem;
   }
   .testimonial-section .testimonials-content {
