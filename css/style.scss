@@ -122,9 +122,6 @@ body {
     margin-left: 1rem;
   }
 }
-.link-button:hover {
-  color: var(--global-color-orange) !important;
-}
 
 .website-logo {
   @include flexCenter();
@@ -202,18 +199,6 @@ body {
       bottom: 0;
     }
   }
-  .burger-menu:hover {
-    height: 1.5rem;
-    .line {
-      background-color: var(--global-color-orange);
-    }
-    .line1 {
-      width: 2rem;
-    }
-    .line2 {
-      width: 2rem;
-    }
-  }
   .burger-menu-close {
     position: absolute;
     top: 0;
@@ -231,10 +216,6 @@ body {
       color: white;
       font-size: 1.5rem;
       transition: 0.5s all ease;
-    }
-    .user:hover,
-    .shopping-cart:hover {
-      color: var(--global-color-orange);
     }
     .user {
       margin-right: 1rem;
@@ -265,13 +246,6 @@ body {
     transform: translate(-50%, -50%) rotate(-45deg) !important;
     top: 50% !important;
     left: 50% !important;
-  }
-}
-
-.burger-active:hover {
-  .line {
-    width: 1.7rem !important;
-    background-color: var(--global-color-orange) !important;
   }
 }
 
@@ -359,9 +333,6 @@ body {
     .menu-item-name {
       transition: 0.5s all ease;
     }
-    .menu-item-name:hover {
-      transform: translateX(10px);
-    }
   }
 
   .overlay-menu-footer {
@@ -369,7 +340,6 @@ body {
     justify-content: space-between;
     width: 100%;
     height: 5rem;
-    border-top: 1px solid black;
     padding: 0 5rem;
     opacity: 0;
     transition: 0.5s all ease 1s;
@@ -384,9 +354,6 @@ body {
           font-size: 1.5rem;
           color: black;
         }
-      }
-      .circle:hover {
-        transform: scale(1.1);
       }
     }
   }
@@ -535,9 +502,6 @@ body {
         font-weight: 600;
         transition: 0.5s all ease;
       }
-      .categories-image:hover {
-        color: var(--global-color-orange);
-      }
       .categories-image1 {
         background-image: url(../images/category01.webp);
       }
@@ -632,9 +596,6 @@ body {
       cursor: pointer;
       transition: 0.3s all ease;
     }
-    .arrow-icon:hover {
-      color: var(--global-color-orange);
-    }
   }
 }
 //Newsletter section end
@@ -655,13 +616,13 @@ body {
         background-position: center;
         background-size: cover;
         @include flexCenterColumn();
-        color: white;
         p {
           text-align: center;
           font-size: 1.4rem;
           font-weight: 600;
           width: 70%;
           margin-bottom: 3rem;
+          color: white;
         }
         .link-button {
           color: white;
@@ -927,9 +888,6 @@ body {
         margin-bottom: 1rem;
         transition: 0.3s all ease;
       }
-      a:hover {
-        color: var(--global-color-orange);
-      }
     }
     .column1 {
       align-items: center;
@@ -959,6 +917,87 @@ body {
 }
 //Footer section end
 //Main section end
+
+//Hver functions from 1025 and up start
+@media only screen and (min-width: 1025px) {
+  .link-button:hover {
+    color: var(--global-color-orange) !important;
+  }
+
+  .navbar {
+    .burger-menu:hover {
+      height: 1.5rem;
+      .line {
+        background-color: var(--global-color-orange);
+      }
+      .line1 {
+        width: 2rem;
+      }
+      .line2 {
+        width: 2rem;
+      }
+    }
+    .user-control {
+      .user:hover,
+      .shopping-cart:hover {
+        color: var(--global-color-orange);
+      }
+    }
+  }
+
+  .burger-active:hover {
+    .line {
+      width: 1.7rem !important;
+      background-color: var(--global-color-orange) !important;
+    }
+  }
+
+  .overlay-menu {
+    .menu-item {
+      .menu-item-name:hover {
+        transform: translateX(10px);
+      }
+    }
+
+    .overlay-menu-footer {
+      .social-media-icons {
+        .circle:hover {
+          transform: scale(1.3);
+        }
+      }
+    }
+  }
+
+  .welcome-section {
+    .welcome-content {
+      .categories-images {
+        .categories-image:hover {
+          color: var(--global-color-orange);
+        }
+      }
+    }
+  }
+
+  .newsletter-content {
+    .newsletter-field {
+      .arrow-icon:hover {
+        color: var(--global-color-orange);
+      }
+    }
+  }
+
+  .footer-section {
+    .footer-content {
+      .column {
+        a:hover {
+          color: var(--global-color-orange);
+        }
+      }
+    }
+  }
+}
+
+//Hver functions from 1025 and up end
 
 //Media querys start
 @media only screen and (max-width: 1280px) {
@@ -1076,6 +1115,43 @@ body {
     .website-logo-text {
       letter-spacing: 0.4rem;
       font-size: 1.3rem;
+    }
+  }
+
+  .overlay-menu {
+    .overlay-menu-lists {
+      margin-top: 5rem;
+      @include flexCenterColumn();
+      align-items: flex-start;
+      width: 100%;
+      padding-left: 2rem;
+      .list1 {
+        margin-bottom: 2rem;
+        .menu-item {
+          font-size: 2rem;
+        }
+      }
+      .list2 {
+        margin: 0;
+        .menu-item {
+          font-size: 2rem;
+          padding: 0;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+    .overlay-menu-footer {
+      width: 100%;
+      @include flexCenterColumn();
+      .social-media-icons {
+        order: 1;
+      }
+      .overlay-menu-footer-text {
+        text-align: center;
+        order: 2;
+        margin-top: 0.5rem;
+        width: 15rem;
+      }
     }
   }
 
@@ -1300,6 +1376,23 @@ body {
     padding-right: 1rem;
   }
 
+  .overlay-menu {
+    .overlay-menu-lists {
+      .list1 {
+        margin-bottom: 1rem;
+        .menu-item {
+          font-size: 1.8rem;
+        }
+      }
+      .list2 {
+        .menu-item {
+          font-size: 1.8rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+
   .website-logo {
     .website-logo-icon {
       display: none;
@@ -1337,6 +1430,22 @@ body {
 }
 
 @media only screen and (max-width: 320px) {
+  .overlay-menu {
+    .overlay-menu-lists {
+      .list1 {
+        margin-bottom: 1rem;
+        .menu-item {
+          font-size: 1.5rem;
+        }
+      }
+      .list2 {
+        .menu-item {
+          font-size: 1.5rem;
+          margin-bottom: 0.2rem;
+        }
+      }
+    }
+  }
   .testimonial-section {
     .testimonials-content {
       height: 70vh;
