@@ -147,7 +147,7 @@ body {
 }
 
 .website-logo .website-logo-icon {
-  background-image: url(../images/website-logo-white.webp);
+  background-image: url(../images/website-logo-white.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -361,7 +361,7 @@ body {
 }
 
 .navbar-scrolled .website-logo .website-logo-icon {
-  background-image: url(../images/website-logo-black.webp);
+  background-image: url(../images/website-logo-black.png);
 }
 
 .navbar-scrolled .website-logo .website-logo-text {
@@ -767,15 +767,15 @@ body {
 }
 
 .welcome-section .welcome-content .categories-images .categories-image1 {
-  background-image: url(../images/category01.webp);
+  background-image: url(../images/category01.jpg);
 }
 
 .welcome-section .welcome-content .categories-images .categories-image2 {
-  background-image: url(../images/category02.webp);
+  background-image: url(../images/category02.jpg);
 }
 
 .welcome-section .welcome-content .categories-images .categories-image3 {
-  background-image: url(../images/category03.webp);
+  background-image: url(../images/category03.jpg);
 }
 
 .product-section {
@@ -802,7 +802,7 @@ body {
 .product-section .product-content .product-image {
   width: 50%;
   height: 80%;
-  background-image: url(../images/product01.webp);
+  background-image: url(../images/product01.jpg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1012,15 +1012,15 @@ body {
 }
 
 .story-section .story-content .story-images-container .story-image1 {
-  background-image: url(../images/story01.webp);
+  background-image: url(../images/story01.jpg);
 }
 
 .story-section .story-content .story-images-container .story-image2 {
-  background-image: url(../images/story02.webp);
+  background-image: url(../images/story02.jpg);
 }
 
 .story-section .story-content .story-images-container .story-image3 {
-  background-image: url(../images/story03.webp);
+  background-image: url(../images/story03.jpg);
 }
 
 .story-section .story-content h1 {
@@ -1033,7 +1033,7 @@ body {
 .company-section {
   position: relative;
   height: 65vh;
-  background-image: url(../images/company1.webp);
+  background-image: url(../images/company1.jpg);
   background-position: top;
   background-size: cover;
 }
@@ -1124,19 +1124,19 @@ body {
 }
 
 .gallery-section .gallery-content .gallery-images .gallery-image1 {
-  background-image: url(../images/gallery1.webp);
+  background-image: url(../images/gallery1.jpg);
 }
 
 .gallery-section .gallery-content .gallery-images .gallery-image2 {
-  background-image: url(../images/gallery2.webp);
+  background-image: url(../images/gallery2.jpg);
 }
 
 .gallery-section .gallery-content .gallery-images .gallery-image3 {
-  background-image: url(../images/gallery3.webp);
+  background-image: url(../images/gallery3.jpg);
 }
 
 .gallery-section .gallery-content .gallery-images .gallery-image4 {
-  background-image: url(../images/gallery4.webp);
+  background-image: url(../images/gallery4.jpg);
 }
 
 .guarantees-section {
@@ -1355,15 +1355,15 @@ body {
 }
 
 .testimonial-section .testimonials-content .testimonial-carousel .testimonial .testimonial-image1 {
-  background-image: url(../images/testimonials1.webp);
+  background-image: url(../images/testimonials1.png);
 }
 
 .testimonial-section .testimonials-content .testimonial-carousel .testimonial .testimonial-image2 {
-  background-image: url(../images/testimonials2.webp);
+  background-image: url(../images/testimonials2.png);
 }
 
 .testimonial-section .testimonials-content .testimonial-carousel .testimonial .testimonial-image3 {
-  background-image: url(../images/testimonials3.webp);
+  background-image: url(../images/testimonials3.png);
 }
 
 .instagram-section .instagram-content {
@@ -1411,19 +1411,19 @@ body {
 }
 
 .instagram-section .instagram-content .instagram-images .instagram-image1 {
-  background-image: url(../images/instagram1.webp);
+  background-image: url(../images/instagram1.jpg);
 }
 
 .instagram-section .instagram-content .instagram-images .instagram-image2 {
-  background-image: url(../images/instagram2.webp);
+  background-image: url(../images/instagram2.jpg);
 }
 
 .instagram-section .instagram-content .instagram-images .instagram-image3 {
-  background-image: url(../images/instagram3.webp);
+  background-image: url(../images/instagram3.jpg);
 }
 
 .instagram-section .instagram-content .instagram-images .instagram-image4 {
-  background-image: url(../images/instagram4.webp);
+  background-image: url(../images/instagram4.jpg);
 }
 
 .footer-section {
